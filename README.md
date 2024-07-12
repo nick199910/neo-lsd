@@ -1,19 +1,8 @@
-## Foundry
+## NEO-LSD 
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+NEO-LSD is a family of liquid staking protocols across multiple blockchains, with headquarters on NEO. Liquid refers to the ability of a user’s stake to become liquid. Upon the user's deposit NEO-LSD issues stToken, which represents the deposited tokens along with all the rewards & penalties accrued through the deposit's staking. Unlike the staked funds, this stToken is liquid — it can be freely transferred between parties, making it usable across different DeFi applications while still receiving daily staked rewards. It is paramount to preserve this property when integrating stTokens into any DeFi protocol.
 
-Foundry consists of:
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
 
 ### Build
 
@@ -45,22 +34,4 @@ $ forge snapshot
 $ anvil
 ```
 
-### Deploy
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
